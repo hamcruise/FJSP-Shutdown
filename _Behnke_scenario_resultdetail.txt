@@ -1,0 +1,1798 @@
+
+<<< setup
+
+m	inst	e_common	e_prod	e_idle	e_shutdown	e_total	Sec	limit	gap	cmax
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 514 variables, 116 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.15s (0.15s extraction + 0.00s propagation)
+ !  . Log search space  : 3,050.2 (before), 3,050.2 (after)
+ !  . Memory usage      : 7.0 MB (before), 7.0 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        514                 -
+ + New bound is 305
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0        510    1            -
+ + New bound is 1776.374
+ *      1858.100    2,761  1.25s        1      (gap is 4.40%)
+ *      1843.200    6,156  3.74s        3      (gap is 3.63%)
+ *      1837.200    6,151  4.19s        1      (gap is 3.31%)
+ *      1837.200   14,244  13.45s       4      (gap is 3.31%)
+ *      1810.500   15,377  13.81s       1      (gap is 1.88%)
+ *      1810.500   23,775  16.07s       4      (gap is 1.88%)
+ ! Using failure-directed search.
+ *      1809.900   1,063k  729.94s      1      (gap is 1.85%)
+ *      1809.900   2,076k  730.49s      4      (gap is 1.85%)
+        1809.900   1,069k        338    1   F         !presenceOf(modes#27)
+ + New bound is 1809.719 (gap is 0.01%)
+ ! ----------------------------------------------------------------------------
+ ! Search completed, 8 solutions found.
+ ! Best objective         : 1809.900 (optimal - effective tol. is 0.18099)
+ ! Best bound             : 1809.719
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 7,171,879
+ ! Number of fails        : 1,972,310
+ ! Total memory usage     : 59.8 MB (59.4 MB CP Optimizer + 0.4 MB Concert)
+ ! Time spent in solve    : 735.40s (735.24s engine + 0.15s extraction)
+ ! Search speed (br. / s) : 9,754.4
+ ! ----------------------------------------------------------------------------
+energy_common   = 305
+energy_prod     = 1504.9
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 1809.9
+m	j	o	pw	pt	s	e
+3	1	1	43	13	0	13
+11	1	2	49	12	24	36
+10	1	3	43	11	40	51
+1	2	1	45	12	0	12
+13	2	2	40	12	12	24
+16	2	3	33	12	24	36
+3	3	1	38	21	13	34
+6	3	2	33	12	34	46
+5	3	3	45	12	48	60
+2	4	1	50	19	11	30
+8	4	2	36	13	34	47
+15	4	3	47	10	47	57
+1	5	1	41	12	24	36
+5	5	2	46	12	36	48
+12	5	3	34	12	48	60
+1	6	1	44	12	12	24
+7	6	2	32	18	24	42
+16	6	3	30	14	47	61
+2	7	1	50	10	30	40
+14	7	2	43	11	40	51
+11	7	3	38	10	51	61
+4	8	1	40	13	0	13
+10	8	2	32	16	13	29
+10	8	3	31	11	29	40
+4	9	1	32	19	13	32
+16	9	2	36	11	36	47
+8	9	3	33	11	47	58
+2	10	1	30	11	0	11
+11	10	2	37	11	13	24
+11	10	3	39	15	36	51
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 574 variables, 297 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.13s (0.13s extraction + 0.00s propagation)
+ !  . Log search space  : 4,334.7 (before), 4,334.7 (after)
+ !  . Memory usage      : 7.4 MB (before), 7.4 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        574                 -
+ + New bound is 305
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0        558    1            -
+ + New bound is 1776.374
+                        0        558    3            -
+ + New bound is 1776.374
+ *      1858.100    2,826  1.13s        3      (gap is 4.40%)
+ *      1849.700    3,904  1.30s        1      (gap is 3.96%)
+ *      1810.500    6,378  2.68s        1      (gap is 1.88%)
+ *      1810.500   25,220  16.46s       3      (gap is 1.88%)
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 4 solutions found.
+ ! Best objective         : 1810.500 (gap is 1.88%)
+ ! Best bound             : 1776.374
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 11,627,179
+ ! Number of fails        : 3,145,951
+ ! Total memory usage     : 64.0 MB (63.4 MB CP Optimizer + 0.6 MB Concert)
+ ! Time spent in solve    : 1200.10s (1199.97s engine + 0.13s extraction)
+ ! Search speed (br. / s) : 9,689.5
+ ! ----------------------------------------------------------------------------
+energy_common   = 305
+energy_prod     = 1505.5
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 1810.5
+m	j	o	pw	pt	s	e
+3	1	1	43	13	0	13
+11	1	2	49	12	13	25
+9	1	3	40	13	25	38
+1	2	1	45	12	24	36
+13	2	2	40	12	36	48
+16	2	3	33	12	48	60
+3	3	1	38	21	13	34
+5	3	2	33	12	34	46
+5	3	3	45	12	46	58
+2	4	1	50	19	11	30
+8	4	2	36	13	30	43
+15	4	3	47	10	43	53
+1	5	1	41	12	12	24
+11	5	2	42	11	25	36
+12	5	3	34	12	36	48
+1	6	1	44	12	0	12
+5	6	2	30	19	15	34
+16	6	3	30	14	34	48
+2	7	1	50	10	30	40
+14	7	2	43	11	40	51
+11	7	3	38	10	51	61
+4	8	1	40	13	19	32
+10	8	2	32	16	32	48
+10	8	3	31	11	48	59
+4	9	1	32	19	0	19
+16	9	2	36	11	23	34
+8	9	3	33	11	43	54
+2	10	1	30	11	0	11
+10	10	2	33	14	18	32
+11	10	3	39	15	36	51
+
+on/off schedule
+m	s	e	dur
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 562 variables, 116 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.13s (0.13s extraction + 0.00s propagation)
+ !  . Log search space  : 3,508.3 (before), 3,508.3 (after)
+ !  . Memory usage      : 7.9 MB (before), 7.9 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        562                 -
+ + New bound is 320
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0        558    1            -
+ + New bound is 1720.752
+                        0        558    3            -
+ + New bound is 1720.752
+ ! Using failure-directed search.
+ *      1792.300     351k  292.23s      2      (gap is 3.99%)
+        1792.300   1,129k         67    3            -
+ + New bound is 1720.752 (gap is 3.99%)
+ *      1789.300   1,148k  1060.24s     3      (gap is 3.83%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 1789.300 (gap is 3.83%)
+ ! Best bound             : 1720.752
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 4,174,512
+ ! Number of fails        : 1,925,709
+ ! Total memory usage     : 57.4 MB (56.5 MB CP Optimizer + 0.9 MB Concert)
+ ! Time spent in solve    : 1200.02s (1199.88s engine + 0.13s extraction)
+ ! Search speed (br. / s) : 3,479.1
+ ! ----------------------------------------------------------------------------
+energy_common   = 320
+energy_prod     = 1469.3
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 1789.3
+m	j	o	pw	pt	s	e
+4	1	1	32	13	0	13
+6	1	2	33	14	18	32
+10	1	3	39	12	32	44
+4	2	1	34	11	13	24
+6	2	2	40	10	32	42
+16	2	3	30	16	48	64
+3	3	1	38	14	0	14
+10	3	2	43	12	20	32
+14	3	3	38	19	32	51
+2	4	1	50	11	31	42
+11	4	2	43	12	42	54
+13	4	3	30	10	54	64
+2	5	1	45	15	0	15
+11	5	2	30	13	29	42
+6	5	3	34	10	42	52
+1	6	1	44	19	19	38
+16	6	2	36	10	38	48
+6	6	3	40	10	52	62
+2	7	1	50	16	15	31
+13	7	2	47	10	34	44
+10	7	3	31	14	44	58
+3	8	1	30	19	14	33
+15	8	2	31	16	33	49
+15	8	3	43	11	49	60
+4	9	1	32	12	24	36
+9	9	2	37	11	36	47
+9	9	3	30	16	47	63
+1	10	1	34	19	0	19
+5	10	2	36	11	19	30
+13	10	3	40	10	44	54
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 622 variables, 297 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.14s (0.14s extraction + 0.00s propagation)
+ !  . Log search space  : 4,934.8 (before), 4,934.8 (after)
+ !  . Memory usage      : 8.3 MB (before), 8.3 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        622                 -
+ + New bound is 320
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0        606    1            -
+ + New bound is 1720.752
+                        0        606    3            -
+ + New bound is 1720.752
+ *      2105.700    7,809  3.62s        3      (gap is 18.28%)
+ *         2,070     724k  4.07s        4      (gap is 16.87%)
+ *      2057.900   22,144  13.81s       1      (gap is 16.38%)
+ *      2057.300   19,041  16.37s       3      (gap is 16.36%)
+ *      2045.700   19,574  29.35s       4      (gap is 15.88%)
+ *      2033.700   20,906  29.88s       4      (gap is 15.39%)
+ *      2013.400   43,141  39.77s       3      (gap is 14.53%)
+ *      1970.400     113k  151.29s      3      (gap is 12.67%)
+ *      1900.900     117k  152.23s      3      (gap is 9.48%)
+ *      1895.400     120k  153.52s      3      (gap is 9.21%)
+ *      1891.700     124k  154.83s      3      (gap is 9.04%)
+ *      1891.100     126k  155.51s      3      (gap is 9.01%)
+ *      1887.500     134k  157.69s      3      (gap is 8.83%)
+ *      1885.800     138k  158.38s      3      (gap is 8.75%)
+ *      1830.800     141k  158.77s      3      (gap is 6.01%)
+ ! Using failure-directed search.
+ *      1830.800     120k  161.76s      2      (gap is 6.01%)
+ *      1829.700     153k  162.07s      3      (gap is 5.95%)
+ ! Time = 162.08s, Average fail depth = 268, Memory usage = 64.9 MB
+ ! Current bound is 1720.752 (gap is 5.95%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *      1820.300     158k  163.40s      3      (gap is 5.47%)
+ *      1817.300     125k  163.85s      2      (gap is 5.31%)
+ *      1816.600     128k  167.37s      2      (gap is 5.28%)
+ *      1816.600     168k  167.52s      3      (gap is 5.28%)
+ *      1789.300     156k  180.22s      2      (gap is 3.83%)
+ *      1789.300     229k  195.28s      3      (gap is 3.83%)
+ *      1789.300     747k  437.61s      4      (gap is 3.83%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 24 solutions found.
+ ! Best objective         : 1789.300 (gap is 3.83%)
+ ! Best bound             : 1720.752
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 9,026,110
+ ! Number of fails        : 2,393,755
+ ! Total memory usage     : 71.5 MB (70.3 MB CP Optimizer + 1.2 MB Concert)
+ ! Time spent in solve    : 1200.11s (1199.97s engine + 0.14s extraction)
+ ! Search speed (br. / s) : 7,521.9
+ ! ----------------------------------------------------------------------------
+energy_common   = 320
+energy_prod     = 1469.3
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 1789.3
+m	j	o	pw	pt	s	e
+4	1	1	32	13	0	13
+6	1	2	33	14	18	32
+10	1	3	39	12	32	44
+4	2	1	34	11	13	24
+6	2	2	40	10	32	42
+16	2	3	30	16	48	64
+3	3	1	38	14	0	14
+10	3	2	43	12	20	32
+14	3	3	38	19	32	51
+2	4	1	50	11	31	42
+11	4	2	43	12	42	54
+13	4	3	30	10	54	64
+2	5	1	45	15	0	15
+11	5	2	30	13	29	42
+6	5	3	34	10	42	52
+1	6	1	44	19	19	38
+16	6	2	36	10	38	48
+6	6	3	40	10	52	62
+2	7	1	50	16	15	31
+13	7	2	47	10	34	44
+10	7	3	31	14	44	58
+3	8	1	30	19	14	33
+15	8	2	31	16	33	49
+15	8	3	43	11	49	60
+4	9	1	32	12	24	36
+9	9	2	37	11	36	47
+9	9	3	30	16	47	63
+1	10	1	34	19	0	19
+5	10	2	36	11	19	30
+13	10	3	40	10	44	54
+
+on/off schedule
+m	s	e	dur
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 566 variables, 116 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.12s (0.12s extraction + 0.00s propagation)
+ !  . Log search space  : 3,489.9 (before), 3,489.9 (after)
+ !  . Memory usage      : 8.6 MB (before), 8.6 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        566                 -
+ + New bound is 315
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0        560    1            -
+ + New bound is 1726.602
+ ! Using failure-directed search.
+ *      2052.200     261M  661.74s      4      (gap is 15.87%)
+ *      2052.199     261M  661.74s      4      (gap is 15.87%)
+ *      2052.199     261M  661.74s      4      (gap is 15.87%)
+ *      2014.000     261M  662.41s      4      (gap is 14.27%)
+ *      2013.999     261M  662.41s      4      (gap is 14.27%)
+ *      2013.999     261M  662.41s      4      (gap is 14.27%)
+ *      2013.999     261M  662.41s      4      (gap is 14.27%)
+ *      1978.400     261M  662.54s      4      (gap is 12.73%)
+ *      1956.600     261M  662.54s      4      (gap is 11.75%)
+ *      1956.599     261M  662.58s      4      (gap is 11.75%)
+ *      1956.599     261M  662.58s      4      (gap is 11.75%)
+ *      1956.599     261M  662.58s      4      (gap is 11.75%)
+ *      1947.600     261M  662.65s      4      (gap is 11.35%)
+ *      1947.599     261M  662.65s      4      (gap is 11.35%)
+ *      1947.599     261M  662.69s      4      (gap is 11.35%)
+ *      1947.599     261M  662.69s      4      (gap is 11.35%)
+ *      1921.799     262M  664.30s      4      (gap is 10.16%)
+ *      1921.799     262M  664.30s      4      (gap is 10.16%)
+ ! Time = 664.30s, Average fail depth = 0, Memory usage = 37.6 MB
+ ! Current bound is 1726.602 (gap is 10.16%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *      1921.799     262M  664.34s      4      (gap is 10.16%)
+ *      1921.799     262M  664.34s      4      (gap is 10.16%)
+ *      1921.799     262M  664.34s      4      (gap is 10.16%)
+ *      1910.400     262M  664.52s      4      (gap is 9.62%)
+ *      1910.399     262M  664.52s      4      (gap is 9.62%)
+ *      1910.399     262M  664.53s      4      (gap is 9.62%)
+ *      1910.399     262M  664.53s      4      (gap is 9.62%)
+ *      1903.500     339M  813.81s      4      (gap is 9.29%)
+ *      1903.499     339M  813.81s      4      (gap is 9.29%)
+ *      1903.499     339M  813.81s      4      (gap is 9.29%)
+ *      1903.499     339M  813.81s      4      (gap is 9.29%)
+ *      1896.099     339M  813.85s      4      (gap is 8.94%)
+ *      1896.099     339M  813.85s      4      (gap is 8.94%)
+ *      1896.099     339M  813.85s      4      (gap is 8.94%)
+ *      1896.099     339M  813.85s      4      (gap is 8.94%)
+ *      1868.700     339M  814.04s      4      (gap is 7.60%)
+ *      1868.699     339M  814.04s      4      (gap is 7.60%)
+ *      1868.699     339M  814.04s      4      (gap is 7.60%)
+ *      1868.699     339M  814.07s      4      (gap is 7.60%)
+ *      1858.099     339M  814.11s      4      (gap is 7.08%)
+ ! Time = 814.11s, Average fail depth = 0, Memory usage = 37.2 MB
+ ! Current bound is 1726.602 (gap is 7.08%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *      1858.099     339M  814.15s      4      (gap is 7.08%)
+ *      1858.099     339M  814.15s      4      (gap is 7.08%)
+ *      1858.099     339M  814.15s      4      (gap is 7.08%)
+ *      1843.500     343M  821.82s      4      (gap is 6.34%)
+ *      1843.499     343M  822.11s      4      (gap is 6.34%)
+ *      1843.499     343M  822.11s      4      (gap is 6.34%)
+ *      1843.499     343M  822.11s      4      (gap is 6.34%)
+ *      1843.499     343M  822.14s      4      (gap is 6.34%)
+ *      1840.900     484M  1093.28s     4      (gap is 6.21%)
+ *      1840.899     503M  1129.68s     4      (gap is 6.21%)
+ *      1840.899     508M  1139.13s     4      (gap is 6.21%)
+ *      1840.899     515M  1152.45s     4      (gap is 6.21%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 50 solutions found.
+ ! Best objective         : 1840.899 (gap is 6.21%)
+ ! Best bound             : 1726.602
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 542,036,455
+ ! Number of fails        : 1,726,688
+ ! Total memory usage     : 45.1 MB (43.5 MB CP Optimizer + 1.5 MB Concert)
+ ! Time spent in solve    : 1200.03s (1199.90s engine + 0.12s extraction)
+ ! Search speed (br. / s) : 451,731.3
+ ! ----------------------------------------------------------------------------
+energy_common   = 315
+energy_prod     = 1525.9
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 1840.9
+m	j	o	pw	pt	s	e
+3	1	1	43	11	0	11
+13	1	2	43	11	11	22
+13	1	3	33	14	22	36
+1	2	1	45	19	20	39
+9	2	2	37	13	39	52
+16	2	3	45	11	52	63
+4	3	1	39	17	19	36
+14	3	2	31	10	41	51
+11	3	3	38	11	51	62
+3	4	1	46	13	23	36
+10	4	2	30	13	36	49
+9	4	3	41	11	52	63
+1	5	1	41	20	0	20
+8	5	2	40	10	29	39
+12	5	3	31	12	39	51
+2	6	1	38	14	16	30
+14	6	2	45	11	30	41
+6	6	3	32	14	41	55
+2	7	1	50	11	30	41
+16	7	2	36	11	41	52
+7	7	3	35	11	52	63
+4	8	1	40	19	0	19
+8	8	2	30	10	19	29
+5	8	3	35	11	29	40
+3	9	1	35	12	11	23
+11	9	2	43	12	28	40
+11	9	3	37	11	40	51
+2	10	1	30	16	0	16
+15	10	2	38	18	16	34
+15	10	3	30	28	34	62
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 626 variables, 297 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.09s (0.09s extraction + 0.00s propagation)
+ !  . Log search space  : 4,919.4 (before), 4,919.4 (after)
+ !  . Memory usage      : 8.6 MB (before), 8.6 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        626                 -
+ + New bound is 315
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0        608    1            -
+ + New bound is 1726.602
+ *      2193.800   18,042  11.10s       3      (gap is 21.30%)
+ *      2137.600   3,350k  13.35s       4      (gap is 19.23%)
+ *      2131.600   52,512  55.43s       3      (gap is 19.00%)
+ *      2121.600   52,640  55.65s       3      (gap is 18.62%)
+ *      2030.600   55,904  56.90s       3      (gap is 14.97%)
+ *      2013.500   57,610  57.43s       3      (gap is 14.25%)
+ *      1968.600   57,835  57.43s       3      (gap is 12.29%)
+ *      1910.100   59,443  57.80s       3      (gap is 9.61%)
+ *      1899.800   65,406  59.84s       3      (gap is 9.12%)
+ *      1885.100   69,858  60.69s       3      (gap is 8.41%)
+ *      1863.200   70,276  61.07s       3      (gap is 7.33%)
+ *      1834.700   73,608  62.17s       3      (gap is 5.89%)
+ ! Using failure-directed search.
+ *      1834.700   54,832  66.98s       2      (gap is 5.89%)
+ *      1832.000   57,755  67.41s       2      (gap is 5.75%)
+ *      1823.500   60,671  67.82s       2      (gap is 5.31%)
+ *      1814.500   62,898  68.14s       2      (gap is 4.84%)
+ *      1814.500   83,880  69.19s       3      (gap is 4.84%)
+ *      1805.400     111k  75.77s       3      (gap is 4.36%)
+ ! Time = 75.77s, Average fail depth = 150, Memory usage = 62.0 MB
+ ! Current bound is 1726.602 (gap is 4.36%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *      1805.400     125k  79.28s       2      (gap is 4.36%)
+ *      1804.400     122k  179.56s      4      (gap is 4.31%)
+ *      1796.300     136k  181.26s      4      (gap is 3.88%)
+ *      1796.300     426k  192.38s      3      (gap is 3.88%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 22 solutions found.
+ ! Best objective         : 1796.300 (gap is 3.88%)
+ ! Best bound             : 1726.602
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 9,521,645
+ ! Number of fails        : 2,444,372
+ ! Total memory usage     : 71.5 MB (69.7 MB CP Optimizer + 1.8 MB Concert)
+ ! Time spent in solve    : 1200.10s (1200.00s engine + 0.09s extraction)
+ ! Search speed (br. / s) : 7,934.7
+ ! ----------------------------------------------------------------------------
+energy_common   = 315
+energy_prod     = 1481.3
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 1796.3
+m	j	o	pw	pt	s	e
+3	1	1	43	11	25	36
+13	1	2	43	11	36	47
+13	1	3	33	14	47	61
+1	2	1	45	19	20	39
+9	2	2	37	13	39	52
+16	2	3	45	11	52	63
+4	3	1	39	17	0	17
+6	3	2	45	10	26	36
+7	3	3	30	10	42	52
+3	4	1	46	13	0	13
+10	4	2	30	13	13	26
+7	4	3	36	10	32	42
+1	5	1	41	20	0	20
+8	5	2	40	10	26	36
+12	5	3	31	12	36	48
+2	6	1	38	14	16	30
+14	6	2	45	11	35	46
+6	6	3	32	14	46	60
+2	7	1	50	11	30	41
+16	7	2	36	11	41	52
+7	7	3	35	11	52	63
+4	8	1	40	19	17	36
+8	8	2	30	10	36	46
+5	8	3	35	11	46	57
+3	9	1	35	12	13	25
+15	9	2	30	10	25	35
+6	9	3	36	10	36	46
+2	10	1	30	16	0	16
+14	10	2	30	19	16	35
+15	10	3	30	28	35	63
+
+on/off schedule
+m	s	e	dur
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 562 variables, 116 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.08s (0.08s extraction + 0.00s propagation)
+ !  . Log search space  : 3,576.4 (before), 3,576.4 (after)
+ !  . Memory usage      : 8.6 MB (before), 8.6 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        562                 -
+ + New bound is 345
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0        558    1            -
+ + New bound is 1928.210
+ *      1976.800    3,190  1.45s        3      (gap is 2.46%)
+ ! Using failure-directed search.
+ *      1955.400   22,636  17.74s       2      (gap is 1.39%)
+ *      1955.400   52,159  21.12s       3      (gap is 1.39%)
+ *      1945.900   55,707  37.74s       2      (gap is 0.91%)
+ *      1945.900     128k  49.18s       3      (gap is 0.91%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 5 solutions found.
+ ! Best objective         : 1945.900 (gap is 0.91%)
+ ! Best bound             : 1928.210
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 9,833,854
+ ! Number of fails        : 2,605,097
+ ! Total memory usage     : 69.4 MB (67.3 MB CP Optimizer + 2.1 MB Concert)
+ ! Time spent in solve    : 1200.11s (1200.02s engine + 0.08s extraction)
+ ! Search speed (br. / s) : 8,194.7
+ ! ----------------------------------------------------------------------------
+energy_common   = 345
+energy_prod     = 1600.9
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 1945.9
+m	j	o	pw	pt	s	e
+2	1	1	40	14	22	36
+12	1	2	39	11	36	47
+12	1	3	40	20	47	67
+2	2	1	35	10	0	10
+6	2	2	46	15	16	31
+8	2	3	36	10	48	58
+2	3	1	49	12	10	22
+13	3	2	40	12	22	34
+7	3	3	30	17	40	57
+2	4	1	50	10	36	46
+5	4	2	31	12	46	58
+16	4	3	35	11	58	69
+1	5	1	41	11	0	11
+7	5	2	33	18	11	29
+7	5	3	41	11	29	40
+4	6	1	46	16	0	16
+12	6	2	45	11	25	36
+15	6	3	38	19	36	55
+3	7	1	30	21	25	46
+9	7	2	31	12	46	58
+8	7	3	36	11	58	69
+3	8	1	30	25	0	25
+9	8	2	33	17	29	46
+11	8	3	43	15	46	61
+4	9	1	32	25	16	41
+6	9	2	39	10	45	55
+6	9	3	36	12	55	67
+1	10	1	34	20	11	31
+6	10	2	32	14	31	45
+7	10	3	36	12	57	69
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 622 variables, 297 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.09s (0.09s extraction + 0.00s propagation)
+ !  . Log search space  : 4,979.5 (before), 4,979.5 (after)
+ !  . Memory usage      : 8.6 MB (before), 8.6 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        622                 -
+ + New bound is 345
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0        606    1            -
+ + New bound is 1928.210
+                        0        606    3            -
+ + New bound is 1928.210
+ *      2425.600    3,723  1.68s        3      (gap is 20.51%)
+ *      1976.800    7,482  3.85s        3      (gap is 2.46%)
+ *      1967.300   30,037  15.84s       4      (gap is 1.99%)
+ *      1955.400   17,452  16.42s       3      (gap is 1.39%)
+ *      1955.400   33,917  16.68s       4      (gap is 1.39%)
+ *      1951.900   93,858  27.24s       4      (gap is 1.21%)
+ *      1945.900   96,388  27.65s       4      (gap is 0.91%)
+ ! Using failure-directed search.
+ *      1945.900   70,282  110.62s      3      (gap is 0.91%)
+ *      1945.900     251k  164.40s      2      (gap is 0.91%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 9 solutions found.
+ ! Best objective         : 1945.900 (gap is 0.91%)
+ ! Best bound             : 1928.210
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 9,818,287
+ ! Number of fails        : 2,516,891
+ ! Total memory usage     : 72.4 MB (70.0 MB CP Optimizer + 2.4 MB Concert)
+ ! Time spent in solve    : 1200.10s (1200.01s engine + 0.09s extraction)
+ ! Search speed (br. / s) : 8,181.8
+ ! ----------------------------------------------------------------------------
+energy_common   = 345
+energy_prod     = 1600.9
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 1945.9
+m	j	o	pw	pt	s	e
+2	1	1	40	14	22	36
+12	1	2	39	11	36	47
+12	1	3	40	20	47	67
+2	2	1	35	10	0	10
+6	2	2	46	15	16	31
+8	2	3	36	10	48	58
+2	3	1	49	12	10	22
+13	3	2	40	12	22	34
+7	3	3	30	17	40	57
+2	4	1	50	10	36	46
+5	4	2	31	12	46	58
+16	4	3	35	11	58	69
+1	5	1	41	11	0	11
+7	5	2	33	18	11	29
+7	5	3	41	11	29	40
+4	6	1	46	16	0	16
+12	6	2	45	11	25	36
+15	6	3	38	19	36	55
+3	7	1	30	21	25	46
+9	7	2	31	12	46	58
+8	7	3	36	11	58	69
+3	8	1	30	25	0	25
+9	8	2	33	17	29	46
+11	8	3	43	15	46	61
+4	9	1	32	25	16	41
+6	9	2	39	10	45	55
+6	9	3	36	12	55	67
+1	10	1	34	20	11	31
+6	10	2	32	14	31	45
+7	10	3	36	12	57	69
+
+on/off schedule
+m	s	e	dur
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 518 variables, 116 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.07s (0.07s extraction + 0.00s propagation)
+ !  . Log search space  : 3,043.8 (before), 3,043.8 (after)
+ !  . Memory usage      : 8.6 MB (before), 8.6 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        518                 -
+ + New bound is 310
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0        511    1            -
+ + New bound is 1823.448
+ *      1953.200   27,345  19.60s       1      (gap is 6.64%)
+ *      1953.200   51,982  63.81s       3      (gap is 6.64%)
+        1953.200        0        511    4            -
+ + New bound is 1823.448 (gap is 6.64%)
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 1953.200 (gap is 6.64%)
+ ! Best bound             : 1823.448
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 9,645,496
+ ! Number of fails        : 2,499,895
+ ! Total memory usage     : 64.4 MB (61.7 MB CP Optimizer + 2.7 MB Concert)
+ ! Time spent in solve    : 1200.04s (1199.96s engine + 0.07s extraction)
+ ! Search speed (br. / s) : 8,038.1
+ ! ----------------------------------------------------------------------------
+energy_common   = 310
+energy_prod     = 1643.2
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 1953.2
+m	j	o	pw	pt	s	e
+2	1	1	40	12	14	26
+10	1	2	30	11	26	37
+10	1	3	43	15	37	52
+3	2	1	33	16	25	41
+5	2	2	33	11	41	52
+10	2	3	43	10	52	62
+3	3	1	38	13	12	25
+14	3	2	38	18	33	51
+6	3	3	40	11	51	62
+2	4	1	50	15	26	41
+12	4	2	34	10	41	51
+15	4	3	39	11	51	62
+4	5	1	45	11	29	40
+15	5	2	47	11	40	51
+14	5	3	43	10	51	61
+1	6	1	44	16	12	28
+13	6	2	47	12	31	43
+11	6	3	43	19	43	62
+2	7	1	50	14	0	14
+15	7	2	36	16	24	40
+5	7	3	30	10	52	62
+4	8	1	40	29	0	29
+16	8	2	35	14	29	43
+13	8	3	40	14	43	57
+1	9	1	41	12	0	12
+14	9	2	31	17	16	33
+8	9	3	33	26	33	59
+3	10	1	44	12	0	12
+13	10	2	31	12	19	31
+11	10	3	39	11	32	43
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 578 variables, 297 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.08s (0.08s extraction + 0.00s propagation)
+ !  . Log search space  : 4,326.9 (before), 4,326.9 (after)
+ !  . Memory usage      : 8.6 MB (before), 8.6 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0        578                 -
+ + New bound is 310
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0        559    1            -
+ + New bound is 1823.448
+ *      2234.900    6,813  2.20s        1      (gap is 18.41%)
+ *      2206.100    7,611  2.55s        1      (gap is 17.35%)
+ *      2170.900    8,404  2.86s        1      (gap is 16.00%)
+ *      2104.100    7,567  4.04s        3      (gap is 13.34%)
+ *      2100.400   17,756  15.46s       1      (gap is 13.19%)
+ *      2084.200   27,972  18.31s       3      (gap is 12.51%)
+ *      2067.900   29,256  18.37s       3      (gap is 11.82%)
+ *      2058.900   29,754  18.53s       3      (gap is 11.44%)
+ *      1991.800   30,502  18.71s       3      (gap is 8.45%)
+ *      1953.200   26,630  19.09s       4      (gap is 6.64%)
+ *      1953.200   33,344  19.26s       3      (gap is 6.64%)
+        1953.200   51,329        135    1            -
+ + New bound is 1823.448 (gap is 6.64%)
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 11 solutions found.
+ ! Best objective         : 1953.200 (gap is 6.64%)
+ ! Best bound             : 1823.448
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 11,240,559
+ ! Number of fails        : 2,850,048
+ ! Total memory usage     : 67.5 MB (64.5 MB CP Optimizer + 3.0 MB Concert)
+ ! Time spent in solve    : 1200.13s (1200.05s engine + 0.08s extraction)
+ ! Search speed (br. / s) : 9,366.7
+ ! ----------------------------------------------------------------------------
+energy_common   = 310
+energy_prod     = 1643.2
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 1953.2
+m	j	o	pw	pt	s	e
+2	1	1	40	12	14	26
+10	1	2	30	11	26	37
+10	1	3	43	15	37	52
+3	2	1	33	16	25	41
+5	2	2	33	11	41	52
+10	2	3	43	10	52	62
+3	3	1	38	13	12	25
+14	3	2	38	18	33	51
+6	3	3	40	11	51	62
+2	4	1	50	15	26	41
+12	4	2	34	10	41	51
+15	4	3	39	11	51	62
+4	5	1	45	11	29	40
+15	5	2	47	11	40	51
+14	5	3	43	10	51	61
+1	6	1	44	16	12	28
+13	6	2	47	12	31	43
+11	6	3	43	19	43	62
+2	7	1	50	14	0	14
+15	7	2	36	16	24	40
+5	7	3	30	10	52	62
+4	8	1	40	29	0	29
+16	8	2	35	14	29	43
+13	8	3	40	14	43	57
+1	9	1	41	12	0	12
+14	9	2	31	17	16	33
+8	9	3	33	26	33	59
+3	10	1	44	12	0	12
+13	10	2	31	12	19	31
+11	10	3	39	11	32	43
+
+on/off schedule
+m	s	e	dur
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 1,168 variables, 166 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.25s (0.25s extraction + 0.00s propagation)
+ !  . Log search space  : 8,125.2 (before), 8,125.2 (after)
+ !  . Memory usage      : 12.3 MB (before), 12.3 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0      1,168                 -
+ + New bound is 450
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0      1,164    1            -
+ + New bound is 3300.392
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, no solution found.
+ ! Best bound             : 3300.392
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 266,981,244
+ ! Number of fails        : 854,180
+ ! Total memory usage     : 90.9 MB (87.4 MB CP Optimizer + 3.5 MB Concert)
+ ! Time spent in solve    : 1200.04s (1199.79s engine + 0.25s extraction)
+ ! Search speed (br. / s) : 222,523.3
+ ! ----------------------------------------------------------------------------
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 1,228 variables, 347 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.26s (0.26s extraction + 0.00s propagation)
+ !  . Log search space  : 10,416.7 (before), 10,416.7 (after)
+ !  . Memory usage      : 17.0 MB (before), 17.0 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0      1,228                 -
+ + New bound is 450
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0      1,212    1            -
+ + New bound is 3300.392
+ *      3399.000   45,542  95.24s       3      (gap is 2.90%)
+        3399.000     120k        782    3            -
+ + New bound is 3300.392 (gap is 2.90%)
+ ! Using failure-directed search.
+ *      3399.000     128k  278.99s      2      (gap is 2.90%)
+ *      3391.800     194k  279.45s      3      (gap is 2.69%)
+ *      3385.800     129k  281.51s      2      (gap is 2.52%)
+ *      3380.800     197k  286.36s      3      (gap is 2.38%)
+ *      3380.800     134k  292.71s      1      (gap is 2.38%)
+ *      3380.800     163k  322.73s      2      (gap is 2.38%)
+ *      3379.300     341k  517.17s      3      (gap is 2.34%)
+ *      3368.300   79,567  520.64s      4      (gap is 2.02%)
+ *      3359.300     338k  526.29s      1      (gap is 1.75%)
+ *      3358.300     339k  550.39s      1      (gap is 1.72%)
+ *      3358.300     345k  558.28s      3      (gap is 1.72%)
+ *      3358.300     476k  1087.16s     2      (gap is 1.72%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 13 solutions found.
+ ! Best objective         : 3358.300 (gap is 1.72%)
+ ! Best bound             : 3300.392
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 1,635,459
+ ! Number of fails        : 437,883
+ ! Total memory usage     : 138.7 MB (134.6 MB CP Optimizer + 4.1 MB Concert)
+ ! Time spent in solve    : 1200.26s (1200.00s engine + 0.26s extraction)
+ ! Search speed (br. / s) : 1,362.9
+ ! ----------------------------------------------------------------------------
+energy_common   = 450
+energy_prod     = 2895.3
+energy_idle     = 3
+energy_shutdown = 10
+energy_total    = 3358.3
+m	j	o	pw	pt	s	e
+1	1	1	32	11	27	38
+12	1	2	35	18	45	63
+14	1	3	30	13	63	76
+1	2	1	45	15	52	67
+9	2	2	50	11	67	78
+5	2	3	31	12	78	90
+2	3	1	38	10	0	10
+12	3	2	30	17	18	35
+9	3	3	41	13	44	57
+2	4	1	46	10	48	58
+15	4	2	33	10	60	70
+15	4	3	36	10	70	80
+3	5	1	46	20	17	37
+6	5	2	32	13	37	50
+13	5	3	30	20	50	70
+2	6	1	34	11	58	69
+7	6	2	34	10	69	79
+7	6	3	43	11	79	90
+1	7	1	30	11	16	27
+10	7	2	36	10	41	51
+7	7	3	43	10	59	69
+3	8	1	34	17	0	17
+11	8	2	46	12	21	33
+11	8	3	31	15	33	48
+1	9	1	41	16	0	16
+15	9	2	35	13	21	34
+10	9	3	35	12	51	63
+2	10	1	44	12	10	22
+5	10	2	32	10	22	32
+7	10	3	31	14	33	47
+2	11	1	32	13	22	35
+12	11	2	36	10	35	45
+7	11	3	45	12	47	59
+4	12	1	44	20	47	67
+13	12	2	40	10	70	80
+15	12	3	38	10	80	90
+2	13	1	39	13	35	48
+11	13	2	30	16	48	64
+6	13	3	39	15	64	79
+4	14	1	50	13	20	33
+5	14	2	38	16	62	78
+8	14	3	44	10	80	90
+1	15	1	45	14	38	52
+6	15	2	30	11	52	63
+10	15	3	35	16	63	79
+4	16	1	33	10	10	20
+16	16	2	37	12	56	68
+16	16	3	37	12	68	80
+4	17	1	36	10	0	10
+15	17	2	31	26	34	60
+11	17	3	31	15	64	79
+4	18	1	33	14	33	47
+5	18	2	31	14	48	62
+12	18	3	35	12	63	75
+3	19	1	45	15	55	70
+8	19	2	47	10	70	80
+16	19	3	31	10	80	90
+3	20	1	34	18	37	55
+9	20	2	33	10	57	67
+12	20	3	36	12	75	87
+
+on/off schedule
+m	s	e	dur
+16	32	48	16
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 1,200 variables, 166 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.26s (0.26s extraction + 0.00s propagation)
+ !  . Log search space  : 8,580.1 (before), 8,580.1 (after)
+ !  . Memory usage      : 17.4 MB (before), 17.4 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0      1,200                 -
+ + New bound is 450
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0      1,196    1            -
+ + New bound is 3397.514
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, no solution found.
+ ! Best bound             : 3397.514
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 258,563,914
+ ! Number of fails        : 850,857
+ ! Total memory usage     : 96.0 MB (91.4 MB CP Optimizer + 4.6 MB Concert)
+ ! Time spent in solve    : 1200.05s (1199.78s engine + 0.26s extraction)
+ ! Search speed (br. / s) : 215,508.0
+ ! ----------------------------------------------------------------------------
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 1,260 variables, 347 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.27s (0.27s extraction + 0.00s propagation)
+ !  . Log search space  : 10,969.5 (before), 10,969.5 (after)
+ !  . Memory usage      : 17.7 MB (before), 17.7 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0      1,260                 -
+ + New bound is 450
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0      1,244    1            -
+ + New bound is 3397.514
+ ! Using failure-directed search.
+ *      3543.700     364k  683.79s      2      (gap is 4.13%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 3543.700 (gap is 4.13%)
+ ! Best bound             : 3397.514
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 227,500,167
+ ! Number of fails        : 1,251,723
+ ! Total memory usage     : 101.6 MB (96.3 MB CP Optimizer + 5.3 MB Concert)
+ ! Time spent in solve    : 1200.23s (1199.96s engine + 0.27s extraction)
+ ! Search speed (br. / s) : 189,589.8
+ ! ----------------------------------------------------------------------------
+energy_common   = 450
+energy_prod     = 3093.7
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 3543.7
+m	j	o	pw	pt	s	e
+4	1	1	35	10	59	69
+8	1	2	40	10	69	79
+15	1	3	39	11	79	90
+1	2	1	45	17	0	17
+16	2	2	40	10	17	27
+13	2	3	33	22	27	49
+4	3	1	37	14	45	59
+6	3	2	46	14	59	73
+6	3	3	33	15	73	88
+1	4	1	38	11	57	68
+5	4	2	36	10	68	78
+10	4	3	40	12	78	90
+2	5	1	43	13	12	25
+16	5	2	33	12	38	50
+16	5	3	38	11	50	61
+1	6	1	44	21	17	38
+8	6	2	36	23	46	69
+7	6	3	31	17	69	86
+3	7	1	30	13	0	13
+6	7	2	42	11	13	24
+14	7	3	47	16	27	43
+2	8	1	30	12	53	65
+11	8	2	49	10	67	77
+8	8	3	43	10	79	89
+4	9	1	32	10	35	45
+15	9	2	32	14	46	60
+15	9	3	42	19	60	79
+4	10	1	36	10	15	25
+15	10	2	39	12	34	46
+13	10	3	36	17	49	66
+4	11	1	42	15	0	15
+6	11	2	32	18	24	42
+5	11	3	32	14	54	68
+4	12	1	44	10	25	35
+14	12	2	33	23	43	66
+5	12	3	37	11	78	89
+3	13	1	33	18	35	53
+7	13	2	30	12	57	69
+16	13	3	35	16	71	87
+2	14	1	46	12	0	12
+16	14	2	40	11	27	38
+6	14	3	41	17	42	59
+3	15	1	40	10	25	35
+5	15	2	39	19	35	54
+10	15	3	39	13	65	78
+1	16	1	38	19	38	57
+12	16	2	34	13	57	70
+9	16	3	44	13	70	83
+3	17	1	46	12	53	65
+13	17	2	33	11	66	77
+14	17	3	30	13	77	90
+2	18	1	40	17	25	42
+11	18	2	35	15	42	57
+14	18	3	36	11	66	77
+3	19	1	45	12	13	25
+8	19	2	39	14	32	46
+11	19	3	48	10	57	67
+2	20	1	31	11	42	53
+16	20	2	39	10	61	71
+13	20	3	30	12	77	89
+
+on/off schedule
+m	s	e	dur
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 1,056 variables, 166 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.21s (0.21s extraction + 0.00s propagation)
+ !  . Log search space  : 7,247.2 (before), 7,247.2 (after)
+ !  . Memory usage      : 18.0 MB (before), 18.0 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0      1,056                 -
+ + New bound is 465
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0      1,052    1            -
+ + New bound is 3415.342
+ ! Using failure-directed search.
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, no solution found.
+ ! Best bound             : 3415.342
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 213,342,355
+ ! Number of fails        : 1,261,107
+ ! Total memory usage     : 88.0 MB (82.3 MB CP Optimizer + 5.7 MB Concert)
+ ! Time spent in solve    : 1200.10s (1199.89s engine + 0.21s extraction)
+ ! Search speed (br. / s) : 177,801.0
+ ! ----------------------------------------------------------------------------
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 1,116 variables, 347 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.21s (0.21s extraction + 0.00s propagation)
+ !  . Log search space  : 9,320.0 (before), 9,320.0 (after)
+ !  . Memory usage      : 18.0 MB (before), 18.0 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0      1,116                 -
+ + New bound is 465
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0      1,100    1            -
+ + New bound is 3415.342
+ *      4523.500   96,181  138.27s      1      (gap is 24.50%)
+ *      4484.500     247k  388.96s      3      (gap is 23.84%)
+ *      4424.500     247k  389.09s      3      (gap is 22.81%)
+ *      4379.500     253k  394.40s      3      (gap is 22.02%)
+ *      4377.500     253k  394.55s      3      (gap is 21.98%)
+ *      4277.600     253k  394.84s      3      (gap is 20.16%)
+ *      4260.600     253k  394.84s      3      (gap is 19.84%)
+ *      4243.500     273k  427.15s      3      (gap is 19.52%)
+ *      4242.500     277k  429.09s      3      (gap is 19.50%)
+ *      4190.400   45,506  435.18s      4      (gap is 18.50%)
+ *      4189.400   45,615  435.41s      4      (gap is 18.48%)
+ *      4103.800   47,223  436.93s      4      (gap is 16.78%)
+ *      4050.400   47,767  437.11s      4      (gap is 15.68%)
+ *      4041.400   47,855  437.11s      4      (gap is 15.49%)
+ *      4012.400   51,401  439.60s      4      (gap is 14.88%)
+ *      3969.200   56,041  443.54s      4      (gap is 13.95%)
+ *      3968.800     299k  446.74s      3      (gap is 13.95%)
+ *      3967.500   61,410  446.83s      4      (gap is 13.92%)
+ ! Time = 446.83s, Average fail depth = 352, Memory usage = 120.1 MB
+ ! Current bound is 3415.342 (gap is 13.92%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *      3965.800     299k  446.83s      3      (gap is 13.88%)
+ *      3957.000   64,260  448.39s      4      (gap is 13.69%)
+ *      3956.600   74,156  455.84s      4      (gap is 13.68%)
+ *      3949.400   74,974  456.40s      4      (gap is 13.52%)
+ *      3928.400   75,136  456.56s      4      (gap is 13.06%)
+ *      3920.400   76,094  457.33s      4      (gap is 12.88%)
+ *      3916.500   76,714  457.53s      4      (gap is 12.80%)
+ *      3886.500   76,893  457.53s      4      (gap is 12.12%)
+ *      3883.500   79,185  458.75s      4      (gap is 12.06%)
+ *      3881.500   80,245  459.34s      4      (gap is 12.01%)
+ *      3879.500   80,442  459.54s      4      (gap is 11.96%)
+ *      3873.500   81,742  460.34s      4      (gap is 11.83%)
+ *      3870.400   84,698  461.30s      4      (gap is 11.76%)
+ *      3865.000   85,651  461.62s      4      (gap is 11.63%)
+ *      3863.000   85,828  461.72s      4      (gap is 11.59%)
+ *      3837.800   86,417  461.83s      4      (gap is 11.01%)
+ *      3815.400   88,466  462.47s      4      (gap is 10.49%)
+ *      3802.700   91,349  464.13s      4      (gap is 10.19%)
+ *      3799.000   94,700  465.73s      4      (gap is 10.10%)
+ *      3783.000   94,884  465.90s      4      (gap is 9.72%)
+ ! Time = 465.90s, Average fail depth = 339, Memory usage = 119.7 MB
+ ! Current bound is 3415.342 (gap is 9.72%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *      3769.000   95,238  466.06s      4      (gap is 9.38%)
+ *      3766.100     100k  468.80s      4      (gap is 9.31%)
+ *      3731.100     102k  469.35s      4      (gap is 8.46%)
+ *      3729.900     102k  469.46s      4      (gap is 8.43%)
+ *      3725.100     105k  470.87s      4      (gap is 8.32%)
+ *      3680.300     107k  471.80s      4      (gap is 7.20%)
+ *      3661.900     107k  471.99s      4      (gap is 6.73%)
+ *      3655.900     109k  472.41s      4      (gap is 6.58%)
+ *      3655.900     317k  472.61s      3      (gap is 6.58%)
+ *      3653.800     110k  472.91s      4      (gap is 6.53%)
+ *      3651.400     113k  473.46s      4      (gap is 6.46%)
+ *      3645.600     117k  474.16s      4      (gap is 6.32%)
+ *      3626.000     120k  475.37s      4      (gap is 5.81%)
+ *      3621.200     120k  475.56s      4      (gap is 5.68%)
+ *      3616.200     324k  476.37s      3      (gap is 5.55%)
+ *      3611.600     124k  476.52s      4      (gap is 5.43%)
+ *      3590.600     130k  478.37s      4      (gap is 4.88%)
+ *      3588.600     132k  479.15s      4      (gap is 4.83%)
+ *      3565.400     132k  479.15s      4      (gap is 4.21%)
+ *      3540.600     133k  480.23s      4      (gap is 3.54%)
+ ! Time = 480.23s, Average fail depth = 326, Memory usage = 120.2 MB
+ ! Current bound is 3415.342 (gap is 3.54%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *      3538.600     134k  480.64s      4      (gap is 3.48%)
+ *      3528.300     138k  483.17s      4      (gap is 3.20%)
+ *      3526.200     148k  487.73s      4      (gap is 3.14%)
+ *      3523.800     196k  511.92s      4      (gap is 3.08%)
+ *      3520.200     197k  512.35s      4      (gap is 2.98%)
+ *      3520.200     348k  513.01s      3      (gap is 2.98%)
+ *      3513.600     254k  539.42s      4      (gap is 2.80%)
+ *      3513.600     369k  544.87s      3      (gap is 2.80%)
+ *      3510.000     390k  569.25s      3      (gap is 2.70%)
+ *      3502.800     398k  571.79s      3      (gap is 2.50%)
+ *      3502.800     296k  572.50s      4      (gap is 2.50%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 69 solutions found.
+ ! Best objective         : 3502.800 (gap is 2.50%)
+ ! Best bound             : 3415.342
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 2,578,007
+ ! Number of fails        : 789,263
+ ! Total memory usage     : 127.4 MB (121.2 MB CP Optimizer + 6.2 MB Concert)
+ ! Time spent in solve    : 1200.02s (1199.81s engine + 0.21s extraction)
+ ! Search speed (br. / s) : 2,148.7
+ ! ----------------------------------------------------------------------------
+energy_common   = 465
+energy_prod     = 3031.8
+energy_idle     = 6
+energy_shutdown = 0
+energy_total    = 3502.8
+m	j	o	pw	pt	s	e
+3	1	1	38	12	0	12
+13	1	2	31	11	25	36
+9	1	3	36	15	43	58
+1	2	1	45	15	32	47
+8	2	2	36	14	54	68
+10	2	3	42	10	71	81
+2	3	1	38	10	48	58
+9	3	2	38	10	58	68
+7	3	3	31	18	74	92
+1	4	1	38	12	60	72
+5	4	2	35	11	72	83
+13	4	3	30	10	83	93
+1	5	1	41	19	13	32
+8	5	2	36	22	32	54
+13	5	3	42	11	60	71
+3	6	1	31	16	48	64
+15	6	2	40	11	64	75
+8	6	3	31	12	81	93
+4	7	1	39	12	10	22
+9	7	2	41	11	32	43
+7	7	3	30	17	43	60
+4	8	1	36	12	22	34
+13	8	2	32	12	36	48
+6	8	3	39	13	52	65
+4	9	1	32	18	34	52
+14	9	2	39	12	58	70
+14	9	3	39	11	70	81
+2	10	1	44	12	10	22
+14	10	2	40	14	32	46
+10	10	3	39	13	58	71
+1	11	1	40	13	47	60
+8	11	2	30	13	68	81
+10	11	3	50	10	81	91
+4	12	1	44	13	52	65
+6	12	2	49	11	65	76
+16	12	3	50	12	79	91
+3	13	1	33	21	27	48
+7	13	2	43	14	60	74
+15	13	3	33	10	75	85
+4	14	1	50	10	0	10
+12	14	2	34	18	28	46
+13	14	3	31	12	48	60
+1	15	1	45	13	0	13
+15	15	2	38	20	26	46
+12	15	3	34	12	46	58
+2	16	1	46	13	22	35
+15	16	2	37	18	46	64
+9	16	3	42	11	68	79
+2	17	1	49	13	58	71
+13	17	2	50	10	71	81
+14	17	3	33	12	81	93
+2	18	1	40	13	35	48
+10	18	2	50	10	48	58
+12	18	3	41	13	58	71
+2	19	1	32	10	0	10
+15	19	2	32	13	13	26
+7	19	3	31	14	29	43
+3	20	1	34	15	12	27
+14	20	2	46	12	46	58
+16	20	3	35	21	58	79
+
+on/off schedule
+m	s	e	dur
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 1,116 variables, 166 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.23s (0.23s extraction + 0.00s propagation)
+ !  . Log search space  : 7,705.1 (before), 7,705.1 (after)
+ !  . Memory usage      : 18.0 MB (before), 18.0 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0      1,116                 -
+ + New bound is 460
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0      1,112    1            -
+ + New bound is 3269.058
+                        0      1,112    3            -
+ + New bound is 3269.058
+ ! Using failure-directed search.
+ *      3341.800     361k  1058.68s     2      (gap is 2.18%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 1 solution found.
+ ! Best objective         : 3341.800 (gap is 2.18%)
+ ! Best bound             : 3269.058
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 290,851,226
+ ! Number of fails        : 802,430
+ ! Total memory usage     : 93.6 MB (86.9 MB CP Optimizer + 6.7 MB Concert)
+ ! Time spent in solve    : 1200.03s (1199.80s engine + 0.23s extraction)
+ ! Search speed (br. / s) : 242,416.0
+ ! ----------------------------------------------------------------------------
+energy_common   = 460
+energy_prod     = 2881.8
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 3341.8
+m	j	o	pw	pt	s	e
+2	1	1	43	10	18	28
+9	1	2	30	11	33	44
+6	1	3	31	20	46	66
+3	2	1	33	11	58	69
+8	2	2	31	10	70	80
+13	2	3	41	11	80	91
+4	3	1	37	11	0	11
+15	3	2	32	13	43	56
+16	3	3	33	10	59	69
+2	4	1	46	13	28	41
+14	4	2	34	10	41	51
+7	4	3	33	19	63	82
+2	5	1	43	10	58	68
+15	5	2	30	12	68	80
+8	5	3	39	12	80	92
+3	6	1	31	12	46	58
+8	6	2	30	12	58	70
+16	6	3	45	10	79	89
+1	7	1	30	15	3	18
+16	7	2	33	14	20	34
+6	7	3	37	12	34	46
+4	8	1	36	17	54	71
+11	8	2	35	11	71	82
+7	8	3	47	10	82	92
+2	9	1	35	17	41	58
+6	9	2	41	13	66	79
+14	9	3	39	10	82	92
+1	10	1	34	17	52	69
+16	10	2	33	10	69	79
+12	10	3	48	11	79	90
+3	11	1	46	13	12	25
+13	11	2	38	14	53	67
+13	11	3	44	13	67	80
+3	12	1	36	12	0	12
+6	12	2	33	13	21	34
+16	12	3	40	12	47	59
+2	13	1	39	18	0	18
+7	13	2	31	11	26	37
+9	13	3	42	11	55	66
+1	14	1	50	11	18	29
+16	14	2	40	13	34	47
+14	14	3	36	10	51	61
+4	15	1	30	19	11	30
+9	15	2	44	11	44	55
+15	15	3	33	12	56	68
+3	16	1	50	11	35	46
+5	16	2	32	13	46	59
+12	16	3	40	13	66	79
+1	17	1	50	13	39	52
+11	17	2	34	12	59	71
+14	17	3	30	11	71	82
+1	18	1	50	10	29	39
+12	18	2	35	10	46	56
+14	18	3	50	10	61	71
+4	19	1	41	24	30	54
+12	19	2	47	10	56	66
+9	19	3	50	15	66	81
+3	20	1	34	10	25	35
+7	20	2	30	26	37	63
+6	20	3	31	13	79	92
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 1,176 variables, 347 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.24s (0.24s extraction + 0.00s propagation)
+ !  . Log search space  : 9,880.8 (before), 9,880.8 (after)
+ !  . Memory usage      : 18.0 MB (before), 18.0 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0      1,176                 -
+ + New bound is 460
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0      1,160    1            -
+ + New bound is 3269.058
+ *      3441.400   11,445  13.45s       3      (gap is 5.01%)
+ ! Using failure-directed search.
+ *      3436.500   40,835  58.93s       2      (gap is 4.87%)
+ *      3436.100   86,567  77.05s       2      (gap is 4.86%)
+ *      3407.300   87,909  80.99s       2      (gap is 4.06%)
+ *      3406.200   90,941  111.65s      3      (gap is 4.03%)
+ *      3406.200   70,905  112.55s      1      (gap is 4.03%)
+ *      3402.700     114k  120.38s      3      (gap is 3.93%)
+ *      3402.700     107k  121.30s      2      (gap is 3.93%)
+ *      3396.700     117k  122.05s      3      (gap is 3.76%)
+ *      3389.700     119k  122.71s      3      (gap is 3.56%)
+ *      3376.500     120k  123.04s      3      (gap is 3.18%)
+ *      3376.500   76,418  124.65s      1      (gap is 3.18%)
+ *      3376.500     117k  129.38s      2      (gap is 3.18%)
+ *      3370.600     120k  132.02s      2      (gap is 3.01%)
+ *      3370.600   80,719  133.47s      1      (gap is 3.01%)
+ *      3350.700     144k  137.59s      3      (gap is 2.44%)
+ *      3335.800     161k  142.84s      3      (gap is 2.00%)
+ *      3335.800     128k  143.37s      2      (gap is 2.00%)
+ ! Time = 143.37s, Average fail depth = 145, Memory usage = 120.9 MB
+ ! Current bound is 3269.058 (gap is 2.00%)
+ !          Best Branches  Non-fixed    W       Branch decision
+ *      3334.800     164k  143.79s      3      (gap is 1.97%)
+ *      3333.800     128k  144.07s      2      (gap is 1.94%)
+ *      3331.800   87,022  145.18s      1      (gap is 1.88%)
+ *      3321.800     170k  146.72s      3      (gap is 1.59%)
+ *      3317.300     174k  147.99s      3      (gap is 1.45%)
+ *      3317.300   89,350  149.56s      1      (gap is 1.45%)
+ *      3314.500     353k  384.89s      2      (gap is 1.37%)
+ *      3314.500     440k  386.07s      3      (gap is 1.37%)
+ *      3311.900     361k  386.31s      2      (gap is 1.29%)
+ *      3311.900     173k  387.47s      1      (gap is 1.29%)
+ *      3305.300     376k  389.03s      2      (gap is 1.10%)
+ *      3305.300     442k  389.38s      3      (gap is 1.10%)
+ *      3305.300     191k  397.68s      4      (gap is 1.10%)
+ *      3297.900     457k  402.46s      2      (gap is 0.87%)
+ *      3297.900     197k  404.63s      4      (gap is 0.87%)
+ *      3297.900     394k  752.33s      1      (gap is 0.87%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 34 solutions found.
+ ! Best objective         : 3297.900 (gap is 0.87%)
+ ! Best bound             : 3269.058
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 4,327,312
+ ! Number of fails        : 1,059,850
+ ! Total memory usage     : 143.6 MB (136.4 MB CP Optimizer + 7.2 MB Concert)
+ ! Time spent in solve    : 1200.33s (1200.09s engine + 0.24s extraction)
+ ! Search speed (br. / s) : 3,605.8
+ ! ----------------------------------------------------------------------------
+energy_common   = 460
+energy_prod     = 2837.9
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 3297.9
+m	j	o	pw	pt	s	e
+2	1	1	43	10	10	20
+9	1	2	30	11	39	50
+5	1	3	35	18	50	68
+3	2	1	33	11	0	11
+8	2	2	31	10	44	54
+13	2	3	41	11	81	92
+3	3	1	45	11	11	22
+15	3	2	32	13	26	39
+16	3	3	33	10	61	71
+2	4	1	46	13	20	33
+6	4	2	30	11	39	50
+9	4	3	36	14	50	64
+2	5	1	43	10	0	10
+15	5	2	30	12	14	26
+8	5	3	39	12	54	66
+3	6	1	31	12	54	66
+8	6	2	30	12	66	78
+16	6	3	45	10	81	91
+1	7	1	30	15	10	25
+16	7	2	33	14	34	48
+6	7	3	37	12	63	75
+4	8	1	36	17	31	48
+11	8	2	35	11	50	61
+7	8	3	47	10	79	89
+2	9	1	35	17	33	50
+6	9	2	41	13	50	63
+14	9	3	39	10	71	81
+4	10	1	36	18	48	66
+16	10	2	33	10	71	81
+12	10	3	48	11	81	92
+3	11	1	46	13	41	54
+13	11	2	38	14	54	68
+13	11	3	44	13	68	81
+1	12	1	35	10	0	10
+6	12	2	33	13	16	29
+6	12	3	34	10	29	39
+2	13	1	39	18	50	68
+7	13	2	31	11	68	79
+9	13	3	42	11	79	90
+1	14	1	50	11	37	48
+16	14	2	40	13	48	61
+14	14	3	36	10	61	71
+4	15	1	30	19	0	19
+9	15	2	44	11	28	39
+15	15	3	33	12	39	51
+4	16	1	33	12	19	31
+5	16	2	32	13	37	50
+12	16	3	40	13	58	71
+1	17	1	50	13	48	61
+11	17	2	34	12	61	73
+8	17	3	31	11	78	89
+1	18	1	50	10	61	71
+12	18	2	35	10	71	81
+14	18	3	50	10	81	91
+3	19	1	45	19	22	41
+12	19	2	47	10	48	58
+9	19	3	50	15	64	79
+1	20	1	30	12	25	37
+7	20	2	30	26	42	68
+6	20	3	31	13	75	88
+
+on/off schedule
+m	s	e	dur
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 1,060 variables, 166 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.22s (0.22s extraction + 0.00s propagation)
+ !  . Log search space  : 7,624.6 (before), 7,624.6 (after)
+ !  . Memory usage      : 18.0 MB (before), 18.0 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0      1,060                 -
+ + New bound is 510
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0      1,056    1            -
+ + New bound is 3647.031
+                        0      1,056    3            -
+ + New bound is 3647.031
+ *      3849.900   86,460  87.20s       3      (gap is 5.27%)
+ ! Using failure-directed search.
+ *      3849.900     254k  227.91s      2      (gap is 5.27%)
+ *      3849.900     262k  253.58s      1      (gap is 5.27%)
+ *      3849.900     231k  474.62s      4      (gap is 5.27%)
+ *      3789.100     819k  1122.73s     4      (gap is 3.75%)
+ *      3789.100   1,051k  1128.32s     2      (gap is 3.75%)
+ *      3774.100     822k  1135.44s     4      (gap is 3.37%)
+ *      3774.100   1,024k  1136.49s     3      (gap is 3.37%)
+ *      3774.100   1,057k  1139.78s     2      (gap is 3.37%)
+ *      3760.100     831k  1146.04s     4      (gap is 3.01%)
+ *      3756.500   1,064k  1147.04s     2      (gap is 2.91%)
+ *      3756.500     832k  1147.46s     4      (gap is 2.91%)
+ *      3740.100   1,077k  1159.26s     2      (gap is 2.49%)
+ *      3740.100     862k  1160.12s     4      (gap is 2.49%)
+ *      3740.100   1,047k  1170.69s     3      (gap is 2.49%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 15 solutions found.
+ ! Best objective         : 3740.100 (gap is 2.49%)
+ ! Best bound             : 3647.031
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 4,242,757
+ ! Number of fails        : 1,020,367
+ ! Total memory usage     : 137.2 MB (129.5 MB CP Optimizer + 7.7 MB Concert)
+ ! Time spent in solve    : 1200.04s (1199.81s engine + 0.22s extraction)
+ ! Search speed (br. / s) : 3,536.2
+ ! ----------------------------------------------------------------------------
+energy_common   = 510
+energy_prod     = 3230.1
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 3740.1
+m	j	o	pw	pt	s	e
+1	1	1	32	25	27	52
+5	1	2	38	11	55	66
+10	1	3	33	14	75	89
+3	2	1	33	17	64	81
+5	2	2	33	11	81	92
+5	2	3	31	10	92	102
+1	3	1	35	10	17	27
+15	3	2	45	10	34	44
+16	3	3	30	13	88	101
+3	4	1	34	16	48	64
+10	4	2	44	11	64	75
+6	4	3	31	16	75	91
+2	5	1	43	17	60	77
+14	5	2	41	13	77	90
+7	5	3	33	12	90	102
+2	6	1	34	12	25	37
+8	6	2	38	12	37	49
+8	6	3	38	15	49	64
+4	7	1	39	11	66	77
+16	7	2	48	11	77	88
+10	7	3	36	12	89	101
+2	8	1	30	25	0	25
+9	8	2	38	15	27	42
+15	8	3	33	12	44	56
+4	9	1	32	13	43	56
+16	9	2	32	17	60	77
+8	9	3	34	10	78	88
+1	10	1	34	14	63	77
+9	10	2	30	10	77	87
+8	10	3	43	14	88	102
+2	11	1	32	23	37	60
+9	11	2	32	14	63	77
+7	11	3	30	11	79	90
+3	12	1	36	14	0	14
+16	12	2	30	16	20	36
+13	12	3	37	11	67	78
+1	13	1	49	17	0	17
+8	13	2	38	11	26	37
+9	13	3	35	21	42	63
+3	14	1	35	23	14	37
+5	14	2	32	14	41	55
+15	14	3	36	10	56	66
+1	15	1	45	11	52	63
+8	15	2	37	14	64	78
+12	15	3	50	20	78	98
+4	16	1	33	10	33	43
+12	16	2	34	30	48	78
+13	16	3	36	24	78	102
+4	17	1	36	15	0	15
+15	17	2	35	11	23	34
+16	17	3	33	24	36	60
+4	18	1	33	18	15	33
+11	18	2	40	28	33	61
+5	18	3	39	15	66	81
+4	19	1	41	10	56	66
+15	19	2	39	21	66	87
+9	19	3	43	12	87	99
+3	20	1	34	11	37	48
+11	20	2	45	10	61	71
+15	20	3	40	12	87	99
+ ! ----------------------------------------------------------------------------
+ ! Minimization problem - 1,120 variables, 347 constraints
+ ! TimeLimit            = 1,200
+ ! Workers              = 4
+ ! LogVerbosity         = Terse
+ ! NoOverlapInferenceLevel = Extended
+ ! TemporalRelaxation   = On
+ ! Initial process time : 0.23s (0.23s extraction + 0.00s propagation)
+ !  . Log search space  : 9,677.7 (before), 9,677.7 (after)
+ !  . Memory usage      : 18.0 MB (before), 18.0 MB (after)
+ ! Using parallel search with 4 workers.
+ ! ----------------------------------------------------------------------------
+ !          Best Branches  Non-fixed    W       Branch decision
+                        0      1,120                 -
+ + New bound is 510
+ ! Using iterative diving.
+ ! Using temporal relaxation.
+                        0      1,104    1            -
+ + New bound is 3647.031
+ *      3714.500   85,853  86.25s       3      (gap is 1.82%)
+ ! Using failure-directed search.
+ *      3714.500     299k  375.04s      1      (gap is 1.82%)
+ ! ----------------------------------------------------------------------------
+ ! Search terminated by limit, 2 solutions found.
+ ! Best objective         : 3714.500 (gap is 1.82%)
+ ! Best bound             : 3647.031
+ ! ----------------------------------------------------------------------------
+ ! Number of branches     : 3,909,275
+ ! Number of fails        : 1,094,484
+ ! Total memory usage     : 134.4 MB (126.2 MB CP Optimizer + 8.2 MB Concert)
+ ! Time spent in solve    : 1200.28s (1200.05s engine + 0.23s extraction)
+ ! Search speed (br. / s) : 3,257.6
+ ! ----------------------------------------------------------------------------
+energy_common   = 510
+energy_prod     = 3204.5
+energy_idle     = 0
+energy_shutdown = 0
+energy_total    = 3714.5
+m	j	o	pw	pt	s	e
+1	1	1	32	25	27	52
+5	1	2	38	11	57	68
+7	1	3	41	13	68	81
+3	2	1	33	17	50	67
+5	2	2	33	11	68	79
+5	2	3	31	10	79	89
+1	3	1	35	10	17	27
+15	3	2	45	10	36	46
+16	3	3	30	13	88	101
+2	4	1	46	21	54	75
+10	4	2	44	11	78	89
+5	4	3	40	12	89	101
+2	5	1	43	17	25	42
+14	5	2	41	13	42	55
+7	5	3	33	12	56	68
+2	6	1	34	12	42	54
+8	6	2	38	12	54	66
+10	6	3	37	12	66	78
+4	7	1	39	11	66	77
+16	7	2	48	11	77	88
+10	7	3	36	12	89	101
+2	8	1	30	25	0	25
+9	8	2	38	15	29	44
+15	8	3	33	12	46	58
+4	9	1	32	13	43	56
+16	9	2	32	17	60	77
+6	9	3	31	10	92	102
+1	10	1	34	14	63	77
+9	10	2	30	10	79	89
+11	10	3	35	12	89	101
+3	11	1	46	13	37	50
+12	11	2	37	17	63	80
+7	11	3	30	11	81	92
+3	12	1	36	14	0	14
+16	12	2	30	16	20	36
+13	12	3	37	11	36	47
+1	13	1	49	17	0	17
+14	13	2	34	10	32	42
+9	13	3	35	21	44	65
+3	14	1	35	23	14	37
+5	14	2	32	14	43	57
+15	14	3	36	10	58	68
+1	15	1	45	11	52	63
+8	15	2	37	14	66	80
+12	15	3	50	20	80	100
+4	16	1	33	10	0	10
+12	16	2	34	30	33	63
+9	16	3	36	14	65	79
+4	17	1	36	15	10	25
+15	17	2	35	11	25	36
+16	17	3	33	24	36	60
+4	18	1	33	18	25	43
+11	18	2	40	28	51	79
+8	18	3	45	13	80	93
+4	19	1	41	10	56	66
+15	19	2	39	21	68	89
+9	19	3	43	12	89	101
+3	20	1	34	11	67	78
+11	20	2	45	10	79	89
+15	20	3	40	12	89	101
+
+on/off schedule
+m	s	e	dur
+main returns 0
+
+<<< main
+
+
+<<< done
+

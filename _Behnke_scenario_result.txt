@@ -1,0 +1,21 @@
+m	inst	e_common	e_prod	e_idle	e_shutdown	e_total	Sec	limit	gap	cmax
+wo_shutdown	Behnke1	305	1504.9	0	0	1809.9	735.4	1200	0.0001	61
+w_shutdown	Behnke1	305	1505.5	0	0	1810.5	1200.108	1200	0.018848405	61
+wo_shutdown	Behnke2	320	1469.3	0	0	1789.3	1200.026	1200	0.038309413	64
+w_shutdown	Behnke2	320	1469.3	0	0	1789.3	1200.113	1200	0.038309413	64
+wo_shutdown	Behnke3	315	1525.9	0	0	1840.9	1200.036	1200	0.062087835	63
+w_shutdown	Behnke3	315	1481.3	0	0	1796.3	1200.104	1200	0.038800588	63
+wo_shutdown	Behnke4	345	1600.9	0	0	1945.9	1200.117	1200	0.009090843	69
+w_shutdown	Behnke4	345	1600.9	0	0	1945.9	1200.107	1200	0.009090843	69
+wo_shutdown	Behnke5	310	1643.2	0	0	1953.2	1200.043	1200	0.066430276	62
+w_shutdown	Behnke5	310	1643.2	0	0	1953.2	1200.137	1200	0.066430276	62
+wo_shutdown	Behnke6	[a IloNumExpr]	[a IloNumExpr]	[a IloNumExpr]	[a IloNumExpr]	Fail	14	1200	
+w_shutdown	Behnke6	450	2895.3	3	10	3358.3	1200.264	1200	0.017243173	90
+wo_shutdown	Behnke7	[a IloNumExpr]	[a IloNumExpr]	[a IloNumExpr]	[a IloNumExpr]	Fail	14	1200	
+w_shutdown	Behnke7	450	3093.7	0	0	3543.7	1200.238	1200	0.041252154	90
+wo_shutdown	Behnke8	[a IloNumExpr]	[a IloNumExpr]	[a IloNumExpr]	[a IloNumExpr]	Fail	14	1200	
+w_shutdown	Behnke8	465	3031.8	6	0	3502.8	1200.029	1200	0.024967892	93
+wo_shutdown	Behnke9	460	2881.8	0	0	3341.8	1200.035	1200	0.021767119	92
+w_shutdown	Behnke9	460	2837.9	0	0	3297.9	1200.337	1200	0.008745371	92
+wo_shutdown	Behnke10	510	3230.1	0	0	3740.1	1200.043	1200	0.024884069	102
+w_shutdown	Behnke10	510	3204.5	0	0	3714.5	1200.288	1200	0.018163658	102

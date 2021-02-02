@@ -1,0 +1,63 @@
+Chromo 	[2, 6, 3, 7, 2, 1, 5, 4, 1, 3, 4, 7, 1, 4, 5, 5, 1, 4, 5, 7, 1, 2, 4, 6, 2, 2, 4, 4, 3, 5, 4, 6, 1, 2, 4, 5, 3, 5, 4, 6, 1, 2, 4, 5]	[7, 9, 3, 2, 7, 8, 1, 0, 0, 8, 3, 8, 6, 9, 2, 1, 6, 4, 10, 5, 10, 7, 8, 7, 1, 2, 4, 5, 9, 0, 5, 9, 3, 6, 4, 5, 0, 10, 6, 4, 1, 3, 2, 10]
+Operation : 1-1	assigned machine	3	interval 	150	250
+Operation : 1-2	assigned machine	7	interval 	250	373
+Operation : 1-3	assigned machine	4	interval 	595	745
+Operation : 1-4	assigned machine	8	interval 	745	890
+Operation : 2-1	assigned machine	3	interval 	0	150
+Operation : 2-2	assigned machine	2	interval 	277	343
+Operation : 2-3	assigned machine	6	interval 	864	959
+Operation : 2-4	assigned machine	5	interval 	1474	1594
+Operation : 3-1	assigned machine	2	interval 	65	127
+Operation : 3-2	assigned machine	4	interval 	490	595
+Operation : 3-3	assigned machine	5	interval 	642	742
+Operation : 3-4	assigned machine	8	interval 	890	1055
+Operation : 4-1	assigned machine	2	interval 	0	65
+Operation : 4-2	assigned machine	5	interval 	65	238
+Operation : 4-3	assigned machine	6	interval 	959	1095
+Operation : 4-4	assigned machine	6	interval 	1180	1350
+Operation : 5-1	assigned machine	2	interval 	343	466
+Operation : 5-2	assigned machine	5	interval 	742	789
+Operation : 5-3	assigned machine	6	interval 	1095	1180
+Operation : 5-4	assigned machine	8	interval 	1180	1345
+Operation : 6-1	assigned machine	2	interval 	616	761
+Operation : 6-2	assigned machine	3	interval 	906	1029
+Operation : 6-3	assigned machine	5	interval 	1029	1149
+Operation : 6-4	assigned machine	7	interval 	1149	1199
+Operation : 7-1	assigned machine	3	interval 	457	602
+Operation : 7-2	assigned machine	3	interval 	602	726
+Operation : 7-3	assigned machine	5	interval 	1149	1294
+Operation : 7-4	assigned machine	5	interval 	1334	1474
+Operation : 8-1	assigned machine	4	interval 	0	245
+Operation : 8-2	assigned machine	6	interval 	245	469
+Operation : 8-3	assigned machine	5	interval 	497	642
+Operation : 8-4	assigned machine	7	interval 	642	792
+Operation : 9-1	assigned machine	2	interval 	127	277
+Operation : 9-2	assigned machine	3	interval 	277	457
+Operation : 9-3	assigned machine	5	interval 	457	497
+Operation : 9-4	assigned machine	6	interval 	714	864
+Operation : 10-1	assigned machine	4	interval 	245	490
+Operation : 10-2	assigned machine	6	interval 	490	714
+Operation : 10-3	assigned machine	5	interval 	789	934
+Operation : 10-4	assigned machine	7	interval 	934	1084
+Operation : 11-1	assigned machine	2	interval 	466	616
+Operation : 11-2	assigned machine	3	interval 	726	906
+Operation : 11-3	assigned machine	5	interval 	1294	1334
+Operation : 11-4	assigned machine	6	interval 	1350	1500
+Machine 0	 cMAX is	0
+Machine 1	 cMAX is	761
+Machine 2	 cMAX is	1029
+Machine 3	 cMAX is	745
+Machine 4	 cMAX is	1594
+Machine 5	 cMAX is	1500
+Machine 6	 cMAX is	1199
+Idle time is 	Machine 6	 interval	1084	1149
+Shutdown :	Machine 6
+Machine 7	 cMAX is	1345
+Idle time is 	Machine 7	 interval	1055	1180
+Shutdown :	Machine 7
+Total cMAX is	1594
+Energy Common is	7970
+Energy Prod is	24237.1
+Energy Idle is	0
+Energy Shutdown is	30
+Obj: 	32237.1	Time: 	1.2107317447662354

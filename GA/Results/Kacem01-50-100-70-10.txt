@@ -1,0 +1,46 @@
+Chromo 	[1, 4, 5, -1, 2, 3, 6, 4, 6, 3, 0, -1, 1, 5, 2, -1, 0, 3, 5, 6, 2, 7, 1, -1, 2, 7, 3, -1, 0, 1, 7, 4]	[5, 5, 3, 5, 5, 2, 3, 4, 4, 1, 6, 7, 4, 2, 0, 2, 6, 1, 0, 2, 3, 6, 3, 7, 1, 1, 0, 7, 7, 6, 4, 0]
+Operation : 1-1	assigned machine	2	interval 	1	4
+Operation : 1-2	assigned machine	5	interval 	4	7
+Operation : 1-3	assigned machine	6	interval 	9	11
+Operation : 2-1	assigned machine	3	interval 	1	4
+Operation : 2-2	assigned machine	4	interval 	11	13
+Operation : 2-3	assigned machine	7	interval 	13	14
+Operation : 2-4	assigned machine	5	interval 	14	18
+Operation : 3-1	assigned machine	7	interval 	0	2
+Operation : 3-2	assigned machine	4	interval 	7	11
+Operation : 3-3	assigned machine	1	interval 	11	12
+Operation : 4-1	assigned machine	2	interval 	0	1
+Operation : 4-2	assigned machine	6	interval 	1	6
+Operation : 4-3	assigned machine	3	interval 	6	8
+Operation : 5-1	assigned machine	1	interval 	0	3
+Operation : 5-2	assigned machine	4	interval 	3	7
+Operation : 5-3	assigned machine	6	interval 	7	9
+Operation : 5-4	assigned machine	7	interval 	9	12
+Operation : 6-1	assigned machine	3	interval 	0	1
+Operation : 6-2	assigned machine	8	interval 	1	5
+Operation : 6-3	assigned machine	2	interval 	5	10
+Operation : 7-1	assigned machine	3	interval 	4	6
+Operation : 7-2	assigned machine	8	interval 	10	15
+Operation : 7-3	assigned machine	4	interval 	15	18
+Operation : 8-1	assigned machine	1	interval 	3	5
+Operation : 8-2	assigned machine	2	interval 	10	14
+Operation : 8-3	assigned machine	8	interval 	15	16
+Operation : 8-4	assigned machine	5	interval 	18	19
+Machine 0	 cMAX is	12
+Idle time is 	Machine 0	 interval	5	11
+Machine 1	 cMAX is	14
+Machine 2	 cMAX is	8
+Machine 3	 cMAX is	18
+Idle time is 	Machine 3	 interval	13	15
+Machine 4	 cMAX is	19
+Machine 5	 cMAX is	11
+Machine 6	 cMAX is	14
+Idle time is 	Machine 6	 interval	2	9
+Idle time is 	Machine 6	 interval	12	13
+Machine 7	 cMAX is	18
+Total cMAX is	19
+Energy Common is	95
+Energy Prod is	311.59999999999997
+Energy Idle is	16
+Energy Shutdown is	0
+Obj: 	422.59999999999997	Time: 	0.9404516220092773

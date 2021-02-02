@@ -1,0 +1,62 @@
+Chromo 	[2, 12, 11, 1, 8, 6, 3, 5, 6, 2, 9, 6, 2, 7, 11, 0, 13, 5, 1, 15, 5, 3, 7, 12, 2, 14, 5, 3, 14, 15]	[1, 2, 6, 3, 1, 0, 6, 1, 0, 4, 2, 3, 6, 9, 5, 5, 7, 8, 3, 5, 9, 2, 0, 8, 4, 8, 9, 4, 7, 7]
+Operation : 1-1	assigned machine	3	interval 	13	24
+Operation : 1-2	assigned machine	13	interval 	24	35
+Operation : 1-3	assigned machine	12	interval 	35	49
+Operation : 2-1	assigned machine	2	interval 	0	18
+Operation : 2-2	assigned machine	9	interval 	18	31
+Operation : 2-3	assigned machine	7	interval 	31	42
+Operation : 3-1	assigned machine	4	interval 	0	17
+Operation : 3-2	assigned machine	6	interval 	17	27
+Operation : 3-3	assigned machine	7	interval 	52	62
+Operation : 4-1	assigned machine	3	interval 	0	13
+Operation : 4-2	assigned machine	10	interval 	13	26
+Operation : 4-3	assigned machine	7	interval 	42	52
+Operation : 5-1	assigned machine	3	interval 	24	43
+Operation : 5-2	assigned machine	8	interval 	43	53
+Operation : 5-3	assigned machine	12	interval 	53	65
+Operation : 6-1	assigned machine	1	interval 	0	10
+Operation : 6-2	assigned machine	14	interval 	10	21
+Operation : 6-3	assigned machine	6	interval 	51	65
+Operation : 7-1	assigned machine	2	interval 	18	29
+Operation : 7-2	assigned machine	16	interval 	29	40
+Operation : 7-3	assigned machine	6	interval 	40	51
+Operation : 8-1	assigned machine	4	interval 	31	50
+Operation : 8-2	assigned machine	8	interval 	53	63
+Operation : 8-3	assigned machine	13	interval 	63	73
+Operation : 9-1	assigned machine	3	interval 	43	55
+Operation : 9-2	assigned machine	15	interval 	55	65
+Operation : 9-3	assigned machine	6	interval 	65	75
+Operation : 10-1	assigned machine	4	interval 	17	31
+Operation : 10-2	assigned machine	15	interval 	31	49
+Operation : 10-3	assigned machine	16	interval 	49	72
+Machine 0	 cMAX is	10
+Machine 1	 cMAX is	29
+Machine 2	 cMAX is	55
+Machine 3	 cMAX is	50
+Machine 4	 cMAX is	0
+Machine 5	 cMAX is	75
+Machine 6	 cMAX is	62
+Machine 7	 cMAX is	63
+Machine 8	 cMAX is	31
+Machine 9	 cMAX is	26
+Machine 10	 cMAX is	0
+Machine 11	 cMAX is	65
+Idle time is 	Machine 11	 interval	49	53
+Machine 12	 cMAX is	73
+Idle time is 	Machine 12	 interval	35	63
+Shutdown :	Machine 12
+Machine 13	 cMAX is	21
+Machine 14	 cMAX is	65
+Idle time is 	Machine 14	 interval	49	55
+Machine 15	 cMAX is	72
+Idle time is 	Machine 15	 interval	40	49
+Machine 16	 cMAX is	0
+Machine 17	 cMAX is	0
+Machine 18	 cMAX is	0
+Machine 19	 cMAX is	0
+Total cMAX is	75
+Energy Common is	375
+Energy Prod is	1469.6000000000001
+Energy Idle is	28
+Energy Shutdown is	30
+Obj: 	1902.6000000000001	Time: 	1.0601637363433838

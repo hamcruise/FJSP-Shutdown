@@ -1,0 +1,155 @@
+
+//Test data for paper "Meng, L., C. Zhang, X. Shao and Y. Ren. 2019. "MILP models for energy-aware flexible job shop scheduling problem." Journal of Cleaner Production 210: 710-723".
+
+nbProcess=3;//the maximum number of the operations of all jobs
+nbJobs =5;//the number of jobs
+nbMchs =6;//the number of machines
+Process1=[3,3,3,3,3];//the number of the operations of all jobs
+pidle=[1,2,3,1,2,3];//idle power of all machines
+EnergyS=[10,30,60,10,30,60];//the energy consumption of all machines for turning On/Off strategy
+TB=[10,15,20,10,15,20];//the time consumed by all machines for turning On/Off strategy
+
+//x[i][j][k],the parameter takes 1 if operation Oi,j can be processed on machine k and takes 0 otherwise.
+//ptime[i][j][k],the processing time of operation Oi,j on machine k.
+//power1[i][j][k],the processing power of operation Oi,j on machine k.
+x=
+[
+//machine1
+[            //job\operation   operation1   operation2    operation3
+[1,0,0,],    //job1
+[1,0,0,],    //job2
+[1,0,0,],    //job3
+[1,0,0,],    //job4
+[1,0,0,],    //job5
+],
+//machine2
+[
+[1,1,0,],
+[0,1,0,],
+[1,0,0,],
+[1,0,0,],
+[1,0,0,],
+],
+//machine3
+[
+[1,0,0,],
+[1,1,0,],
+[0,1,0,],
+[0,0,0,],
+[1,1,0,],
+],
+//machine4
+[
+[0,1,1,],
+[0,0,0,],
+[0,1,1,],
+[0,0,1,],
+[0,1,0,],
+],
+//machine5
+[
+[0,0,1,],
+[0,0,1,],
+[0,0,1,],
+[0,1,0,],
+[0,1,1,],
+],
+//machine6
+[
+[0,0,0,],
+[0,0,1,],
+[0,0,1,],
+[0,0,1,],
+[0,0,1,],
+],
+];
+ptime =
+[
+[
+[147,0,0],
+[214,0,0],
+[87,0,0],
+[87,0,0],
+[128,0,0]
+],
+[
+[123,130,0],
+[0,66,0],
+[62,0,0],
+[65,0,0],
+[123,0,0]
+],
+[
+[145,0,0],
+[150,87,0],
+[0,180,0],
+[0,0,0],
+[145,86,0]
+],
+[
+[0,140,150],
+[0,0,0],
+[0,105,190],
+[0,0,145],
+[0,65,0]
+],
+[
+[0,0,160],
+[0,0,178],
+[0,0,100],
+[0,173,0],
+[0,47,110]
+],
+[
+[0,0,0],
+[0,0,95],
+[0,0,153],
+[0,0,136],
+[0,0,85]
+]
+];
+power1=
+[
+[
+[4.8,0,0,],
+[4.6,0,0,],
+[3.1,0,0,],
+[4,0,0,],
+[4,0,0,],
+],
+[
+[4.3,4.2,0,],
+[0,3.7,0,],
+[4.7,0,0,],
+[3,0,0,],
+[4.1,0,0,],
+],
+[
+[4.3,0,0,],
+[4.9,4.2,0,],
+[0,4.8,0,],
+[0,0,0,],
+[3.9,4.9,0,],
+],
+[
+[0,3.9,4.7,],
+[0,0,0,],
+[0,4.5,4.5,],
+[0,0,4.6,],
+[0,4.7,0,],
+],
+[
+[0,0,4,],
+[0,0,3.6,],
+[0,0,3.7,],
+[0,4.6,0,],
+[0,4.5,3.2,],
+],
+[
+[0,0,0,],
+[0,0,3.4,],
+[0,0,3.4,],
+[0,0,4.8,],
+[0,0,4.1,],
+],
+];

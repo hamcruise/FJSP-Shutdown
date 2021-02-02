@@ -1,0 +1,30 @@
+Chromo 	[2, 3, 3, 2, 1, 5, 1, 3, 4, 1, 4, 5, 0, 4, 5]	[4, 4, 3, 3, 2, 1, 0, 1, 1, 2, 3, 4, 0, 2, 0]
+Operation : 1-1	assigned machine	3	interval 	150	295
+Operation : 1-2	assigned machine	4	interval 	295	435
+Operation : 1-3	assigned machine	4	interval 	435	585
+Operation : 2-1	assigned machine	3	interval 	0	150
+Operation : 2-2	assigned machine	2	interval 	150	216
+Operation : 2-3	assigned machine	6	interval 	216	311
+Operation : 3-1	assigned machine	2	interval 	65	127
+Operation : 3-2	assigned machine	4	interval 	127	232
+Operation : 3-3	assigned machine	5	interval 	348	448
+Operation : 4-1	assigned machine	2	interval 	0	65
+Operation : 4-2	assigned machine	5	interval 	175	348
+Operation : 4-3	assigned machine	6	interval 	348	484
+Operation : 5-1	assigned machine	1	interval 	0	128
+Operation : 5-2	assigned machine	5	interval 	128	175
+Operation : 5-3	assigned machine	6	interval 	484	569
+Machine 0	 cMAX is	128
+Machine 1	 cMAX is	216
+Idle time is 	Machine 1	 interval	127	150
+Shutdown :	Machine 1
+Machine 2	 cMAX is	295
+Machine 3	 cMAX is	585
+Machine 4	 cMAX is	448
+Machine 5	 cMAX is	569
+Total cMAX is	585
+Energy Common is	2925
+Energy Prod is	7026.200000000001
+Energy Idle is	0
+Energy Shutdown is	30
+Obj: 	9981.2	Time: 	0.4727358818054199

@@ -1,0 +1,93 @@
+Chromo 	[0, 11, 5, 0, 8, 4, 1, 7, 8, 1, 5, 14, 2, 11, 6, 1, 6, 5, 0, 9, 6, 2, 10, 15, 1, 14, 9, 1, 4, 6, 3, 11, 6, 3, 12, 14, 1, 8, 5, 3, 12, 7, 0, 5, 9, 3, 15, 11, 3, 8, 10, 3, 4, 11, 2, 7, 15, 2, 8, 11]	[9, 3, 12, 0, 10, 0, 13, 13, 2, 1, 2, 17, 10, 19, 4, 16, 11, 6, 5, 3, 18, 3, 15, 8, 5, 7, 14, 14, 0, 18, 10, 19, 6, 17, 8, 17, 1, 6, 4, 4, 14, 9, 11, 16, 15, 7, 5, 7, 18, 12, 15, 9, 16, 19, 11, 2, 13, 1, 8, 12]
+Operation : 1-1	assigned machine	1	interval 	0	11
+Operation : 1-2	assigned machine	12	interval 	11	29
+Operation : 1-3	assigned machine	6	interval 	32	44
+Operation : 2-1	assigned machine	1	interval 	11	26
+Operation : 2-2	assigned machine	9	interval 	28	39
+Operation : 2-3	assigned machine	5	interval 	53	65
+Operation : 3-1	assigned machine	2	interval 	35	45
+Operation : 3-2	assigned machine	8	interval 	45	61
+Operation : 3-3	assigned machine	9	interval 	87	100
+Operation : 4-1	assigned machine	2	interval 	12	22
+Operation : 4-2	assigned machine	6	interval 	22	32
+Operation : 4-3	assigned machine	15	interval 	32	42
+Operation : 5-1	assigned machine	3	interval 	18	38
+Operation : 5-2	assigned machine	12	interval 	39	51
+Operation : 5-3	assigned machine	7	interval 	76	89
+Operation : 6-1	assigned machine	2	interval 	45	56
+Operation : 6-2	assigned machine	7	interval 	56	66
+Operation : 6-3	assigned machine	6	interval 	66	82
+Operation : 7-1	assigned machine	1	interval 	26	37
+Operation : 7-2	assigned machine	10	interval 	37	47
+Operation : 7-3	assigned machine	7	interval 	66	76
+Operation : 8-1	assigned machine	3	interval 	53	70
+Operation : 8-2	assigned machine	11	interval 	70	82
+Operation : 8-3	assigned machine	16	interval 	91	102
+Operation : 9-1	assigned machine	2	interval 	56	68
+Operation : 9-2	assigned machine	15	interval 	68	81
+Operation : 9-3	assigned machine	10	interval 	81	93
+Operation : 10-1	assigned machine	2	interval 	0	12
+Operation : 10-2	assigned machine	5	interval 	12	22
+Operation : 10-3	assigned machine	7	interval 	89	103
+Operation : 11-1	assigned machine	4	interval 	0	12
+Operation : 11-2	assigned machine	12	interval 	29	39
+Operation : 11-3	assigned machine	7	interval 	39	51
+Operation : 12-1	assigned machine	4	interval 	49	69
+Operation : 12-2	assigned machine	13	interval 	69	79
+Operation : 12-3	assigned machine	15	interval 	81	91
+Operation : 13-1	assigned machine	2	interval 	22	35
+Operation : 13-2	assigned machine	9	interval 	72	87
+Operation : 13-3	assigned machine	6	interval 	87	102
+Operation : 14-1	assigned machine	4	interval 	12	25
+Operation : 14-2	assigned machine	13	interval 	25	39
+Operation : 14-3	assigned machine	8	interval 	71	81
+Operation : 15-1	assigned machine	1	interval 	37	51
+Operation : 15-2	assigned machine	6	interval 	51	62
+Operation : 15-3	assigned machine	10	interval 	62	78
+Operation : 16-1	assigned machine	4	interval 	69	79
+Operation : 16-2	assigned machine	16	interval 	79	91
+Operation : 16-3	assigned machine	12	interval 	91	107
+Operation : 17-1	assigned machine	4	interval 	39	49
+Operation : 17-2	assigned machine	9	interval 	49	72
+Operation : 17-3	assigned machine	11	interval 	82	97
+Operation : 18-1	assigned machine	4	interval 	25	39
+Operation : 18-2	assigned machine	5	interval 	39	53
+Operation : 18-3	assigned machine	12	interval 	53	65
+Operation : 19-1	assigned machine	3	interval 	38	53
+Operation : 19-2	assigned machine	8	interval 	61	71
+Operation : 19-3	assigned machine	16	interval 	102	112
+Operation : 20-1	assigned machine	3	interval 	0	18
+Operation : 20-2	assigned machine	9	interval 	18	28
+Operation : 20-3	assigned machine	12	interval 	65	77
+Machine 0	 cMAX is	51
+Machine 1	 cMAX is	68
+Machine 2	 cMAX is	70
+Machine 3	 cMAX is	79
+Machine 4	 cMAX is	65
+Machine 5	 cMAX is	102
+Idle time is 	Machine 5	 interval	82	87
+Machine 6	 cMAX is	103
+Machine 7	 cMAX is	81
+Machine 8	 cMAX is	100
+Machine 9	 cMAX is	93
+Idle time is 	Machine 9	 interval	78	81
+Machine 10	 cMAX is	97
+Machine 11	 cMAX is	107
+Idle time is 	Machine 11	 interval	77	91
+Shutdown :	Machine 11
+Machine 12	 cMAX is	79
+Idle time is 	Machine 12	 interval	39	69
+Shutdown :	Machine 12
+Machine 13	 cMAX is	0
+Machine 14	 cMAX is	91
+Machine 15	 cMAX is	112
+Machine 16	 cMAX is	0
+Machine 17	 cMAX is	0
+Machine 18	 cMAX is	0
+Machine 19	 cMAX is	0
+Total cMAX is	112
+Energy Common is	560
+Energy Prod is	3003.7
+Energy Idle is	14
+Energy Shutdown is	60
+Obj: 	3637.7	Time: 	2.1741843223571777

@@ -1,0 +1,15 @@
+Chromo 	[1, 0, 1, 1, 0, 0]	[2, 2, 1, 0, 0, 1]
+Operation : 1-1	assigned machine	2	interval 	120	183
+Operation : 1-2	assigned machine	1	interval 	268	355
+Operation : 2-1	assigned machine	2	interval 	0	120
+Operation : 2-2	assigned machine	2	interval 	183	335
+Operation : 3-1	assigned machine	1	interval 	0	125
+Operation : 3-2	assigned machine	1	interval 	125	268
+Machine 0	 cMAX is	355
+Machine 1	 cMAX is	335
+Total cMAX is	355
+Energy Common is	1775
+Energy Prod is	2785.3
+Energy Idle is	0
+Energy Shutdown is	0
+Obj: 	4560.3	Time: 	0.2014327049255371

@@ -1,0 +1,75 @@
+Chromo 	[0, 1, 2, 5, 3, 2, 9, 7, 1, 6, 1, 3, 4, 4, 5, 9, 8, 5, 1, 3, 1, 0, -1, -1, 0, 1, -1, -1, 6, 7, 3, 0, 9, 0, 6, 9, 9, 0, 2, 1, 0, 5, 2, 1, 7, 4, 5, 6, 1, 9, 5, 0, 0, 1, 7, 4, 0, 2, 5, 1]	[2, 13, 3, 13, 13, 11, 0, 0, 8, 6, 6, 10, 8, 1, 1, 12, 13, 1, 12, 8, 3, 11, 3, 9, 14, 9, 4, 7, 12, 4, 5, 1, 4, 2, 2, 10, 7, 7, 7, 6, 8, 5, 5, 11, 2, 10, 14, 14, 6, 0, 4, 0, 9, 11, 5, 14, 10, 9, 12, 3]
+Operation : 1-1	assigned machine	1	interval 	2	3
+Operation : 1-2	assigned machine	2	interval 	4	5
+Operation : 1-3	assigned machine	3	interval 	8	9
+Operation : 1-4	assigned machine	6	interval 	16	20
+Operation : 2-1	assigned machine	4	interval 	0	1
+Operation : 2-2	assigned machine	3	interval 	1	3
+Operation : 2-3	assigned machine	10	interval 	3	4
+Operation : 2-4	assigned machine	8	interval 	6	7
+Operation : 3-1	assigned machine	2	interval 	0	1
+Operation : 3-2	assigned machine	7	interval 	1	2
+Operation : 3-3	assigned machine	2	interval 	11	13
+Operation : 3-4	assigned machine	4	interval 	13	14
+Operation : 4-1	assigned machine	5	interval 	0	1
+Operation : 4-2	assigned machine	5	interval 	1	2
+Operation : 4-3	assigned machine	6	interval 	2	3
+Operation : 4-4	assigned machine	10	interval 	13	14
+Operation : 5-1	assigned machine	9	interval 	0	1
+Operation : 5-2	assigned machine	6	interval 	3	5
+Operation : 5-3	assigned machine	2	interval 	9	11
+Operation : 5-4	assigned machine	4	interval 	11	13
+Operation : 6-1	assigned machine	2	interval 	8	9
+Operation : 6-2	assigned machine	1	interval 	12	13
+Operation : 7-1	assigned machine	1	interval 	3	4
+Operation : 7-2	assigned machine	2	interval 	5	6
+Operation : 8-1	assigned machine	7	interval 	0	1
+Operation : 8-2	assigned machine	8	interval 	7	8
+Operation : 8-3	assigned machine	4	interval 	8	10
+Operation : 8-4	assigned machine	1	interval 	11	12
+Operation : 9-1	assigned machine	10	interval 	0	1
+Operation : 9-2	assigned machine	1	interval 	5	7
+Operation : 9-3	assigned machine	7	interval 	7	11
+Operation : 9-4	assigned machine	10	interval 	11	13
+Operation : 10-1	assigned machine	10	interval 	4	5
+Operation : 10-2	assigned machine	1	interval 	9	11
+Operation : 10-3	assigned machine	3	interval 	11	13
+Operation : 10-4	assigned machine	2	interval 	14	16
+Operation : 11-1	assigned machine	1	interval 	4	5
+Operation : 11-2	assigned machine	6	interval 	5	6
+Operation : 11-3	assigned machine	3	interval 	6	8
+Operation : 11-4	assigned machine	2	interval 	13	14
+Operation : 12-1	assigned machine	8	interval 	0	2
+Operation : 12-2	assigned machine	5	interval 	2	6
+Operation : 12-3	assigned machine	6	interval 	6	8
+Operation : 12-4	assigned machine	7	interval 	11	13
+Operation : 13-1	assigned machine	2	interval 	6	8
+Operation : 13-2	assigned machine	10	interval 	8	10
+Operation : 13-3	assigned machine	6	interval 	10	14
+Operation : 13-4	assigned machine	1	interval 	14	17
+Operation : 14-1	assigned machine	1	interval 	0	2
+Operation : 14-2	assigned machine	2	interval 	2	4
+Operation : 14-3	assigned machine	8	interval 	4	6
+Operation : 14-4	assigned machine	5	interval 	6	8
+Operation : 15-1	assigned machine	1	interval 	7	9
+Operation : 15-2	assigned machine	3	interval 	9	11
+Operation : 15-3	assigned machine	6	interval 	14	16
+Operation : 15-4	assigned machine	2	interval 	16	18
+Machine 0	 cMAX is	17
+Idle time is 	Machine 0	 interval	13	14
+Machine 1	 cMAX is	18
+Machine 2	 cMAX is	13
+Machine 3	 cMAX is	14
+Idle time is 	Machine 3	 interval	10	11
+Machine 4	 cMAX is	8
+Machine 5	 cMAX is	20
+Machine 6	 cMAX is	13
+Machine 7	 cMAX is	8
+Machine 8	 cMAX is	1
+Machine 9	 cMAX is	14
+Total cMAX is	20
+Energy Common is	100
+Energy Prod is	399.79999999999995
+Energy Idle is	2
+Energy Shutdown is	0
+Obj: 	501.79999999999995	Time: 	2.2280728816986084
